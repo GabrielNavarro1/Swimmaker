@@ -11,11 +11,3 @@ SwimMaker will be able to do many things once I finish it. One of the things it 
 # Goals
 
 My goals for this project are to finish at least all the options for each stoke and drill, and be selectable in some sort of workout-like manner. I also plan on having it be able to list itself to show the entire workout, and even export/print it to google docs to easily edit there. I also want to have learned a bit about each of the languages used in coding websites, like JavaScript, CSS, and HTML.
-
-(For me, Delete Later)
-
-https://www.youtube.com/watch?v=bwThn0rxv7M
-
-https://www.youtube.com/watch?v=QdSsRPAcrzM
-
-https://www.youtube.com/watch?v=BA_c3bGQXlQ
