@@ -1,5 +1,5 @@
 body {
-        background-color: #00ffff;
+        background-color: #323232;
       }
 
       p {
@@ -52,7 +52,7 @@ position: relative;
   position: absolue;
   display: none;
   background-color: black;
-  max-width: 20px;
+  max-width: 82px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
