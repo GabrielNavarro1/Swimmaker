@@ -1,60 +1,36 @@
 body {
-        background-color: #323232;
-      }
+  background-color: #323232;
+}
 
-      p {
-        color: white;
-	      text-align: left;
-        font-size: 24px;
-      }
+p {
+  color: white;
+  text-align: left;
+  font-size: 24px;
+}
 
-      h1 {
-        color: #0DAFE7;
-	      text-align: center;
-      }
-      
-      h2 {
-        color: #D3D3D3;
-        text-align: center;
-      }
+
+h1 {
+  color: #0DAFE7;
+  text-align: center;
+}
+
+
+h2 {
+  color: #D3D3D3;
+  text-align: center;
+}
+
+
 h3 {
   color: white;
 }
-      
+
+
 h4 {
   color: white;
 }
-      
-      #dropdown-text {
-        color: white;
-      }
-      
-      #dropdownchoice {
-        color: #FFA500;
-      }
-      
-      .dropdown {
-position: relative;
-        display: inline-block;
-        
-      }
-.dropbtn {
-  background-color: #323232;
-  color: #FFA500;
-  pading: 5px;
-  font-size: 16px;
-}
-.dropbtn:hover, .dropbtn:focus {
-  background-color: black;
-}
 
-.dropdown-content {
-  position: absolue;
-  display: none;
+#dropdown {
   background-color: black;
-  max-width: 85px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  color: orange;
 }
-
-.show {display:block;}
