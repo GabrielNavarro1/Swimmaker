@@ -1,27 +1,141 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Swimmaker Project Thing</title>
-	</head>
-	<body>
-		<h1>Swimmaker, a website to design Swimming Workouts</h1>
+
+  <head>
+
+    <title>Swimmaker Project Thing</title>
+
+  </head>
+
+  <body>
+
+    <h1>Swimmaker, a website to design Swimming Workouts</h1>
+
     <h2>By Gabriel Navarro</h2>
-		<h3>Start designing your Swimming Workout below this line</h3>
-    <h4>First, choose what today's set will focus on.</h4>
-    <div class="dropdown">
-      <button onclick="focusDropdown()" class="dropbtn">Focus for Today</button>
-      <div id="dropdownchoice" class="dropdown-content">
-        <a>Freestyle<br></a>
-        <a>Backstroke<br></a>
-        <a>Breaststroke<br></a>
-        <a>Butterfly<br></a>
-        <a>I.M.<br></a>
-        <a>Best Stroke<br></a>
-        <a>Worst Stroke<br></a>
-        <a>Pacing<br></a>
+
+    <h3>Start designing your Swimming Workout below this line</h3>
+
+    <!--FOCUS TEXT & DROPDOWN-->
+    <h4>First, choose what today's set will focus on:
+
+      <select id="dropdown">
+        <option value="frst">Freestyle</option>
+        <option value="bkstk">Backstroke</option>
+        <option value="brsstk">Breaststroke</option>
+        <option value="btfly">Butterfly</option>
+        <option value="im">IM</option>
+        <option value="bststk">Best Stroke</option>
+        <option value="wrsstk">Worst Stroke</option>
+        <option value="pcng">Pacing</option>
+        <option value="spandpw">Speed and Power</option>
+      </select><br><br><br>
+
+    </h4>
+
+    
+    <!--WARMUP TEXT-->
+    <h3>Now you can start designing the Warm-Up</h3>
+    
+    <!--WARMUP DISTANCE-->
+    <h4>First, choose how many rounds the Warm-Up will be.
+      <div id="container"></div>
+      <div>
+        <button id="warmupround">+</button>
       </div>
+      </h4>
+    
+    <!--WARMUP STROKE-->
+    <h4>Now, choose which stroke the Warm-Up will be.
+    <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       
+       <input type="text">
+       <button onclick="add_four()">+</button>
+       <button onclick="remove_four()">-</button>
+       <div id="new_stroke4"></div>
+       <input type="hidden" value="1" id="total_stroke4">
+    </h4>
+    
+    
+    <!--TEXT ABOUT PRESET-->
+    <h3>
+    <br><br>Now, you can start designing the Pre-Set.
+    
+    </h3>
+    
+    <!--PRESET ROUNDS-->
+    <h4>First, choose how many rounds the Pre-Set will be.
+    <div id="container3"></div>
+    <div>
+      <button id="presetround">+</button>
     </div>
-		<link rel="stylesheet" type="text/css" href="style.css"></link>
-		<script src="dropdown.js"></script>
-	</body>
+    </h4>
+    
+    <!--PRESET STROKES-->
+    <h4>Now you can start choosing what goes into the Pre-Set.
+     <br>
+    Start by saying which stroke you want it to be (e.g. 50 Free), and add more text fields in the order you want them to be swam. (If it is a drill, say something like "50 Back 6-3-6 Drill").
+        <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       
+       <input type="text">
+       <button onclick="add_one()">+</button>
+       <button onclick="remove_one()">-</button>
+       <div id="new_stroke1"></div>
+       <input type="hidden" value="1" id="total_stroke1">
+    </h4>
+    
+    
+    <!--MAIN SET TEXT-->
+    <h3><br><br>Now, you can finally start designing the Main Set</h3>
+    
+    <!--MAIN SET ROUNDS-->
+     <h4>Start by choosing how many rounds the Main Set is going to be.
+    <div id="container4"></div>
+    <div>
+      <button id="mainsetround">+</button>
+    </div>
+    </h4>
+    
+    <!--MAIN SET STROKES-->
+    <h4>Now choose which strokes the Main Set will be, the same way you chose the Pre Set strokes.
+        <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       
+       <input type="text">
+       <button onclick="add_two()">+</button>
+       <button onclick="remove_two()">-</button>
+       <div id="new_stroke2"></div>
+       <input type="hidden" value="1" id="total_stroke2">
+    </h4>
+    
+    
+    <!--WARM DOWN TEXT-->
+    <h3><br><br>Lastly, design a Warm Down</h3>
+    
+    <!--WARM DOWN ROUNDS-->
+    <h4>Start by choosing how many rounds the Warm Down will be.
+    <div id="container5"></div>
+    <div>
+      <button id="warmdownround">+</button>
+    </div>
+    </h4>
+    
+    <!--WARM DOWN STROKES-->
+    <h4>Finally, choose which strokes the Warm Down will be.
+        <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       
+       <input type="text">
+       <button onclick="add_three()">+</button>
+       <button onclick="remove_three()">-</button>
+       <div id="new_stroke3"></div>
+       <input type="hidden" value="1" id="total_stroke3">
+    </h4>
+
+    <!--DISPLAY WORKOUT-->
+    <h3><br><br>Now that you've designed the entire Workout, it will all show up down here, copyable into a Google Doc for ease of printing [WIP]</h3>
+      
+  </body>
+
 </html>
